@@ -6,11 +6,14 @@ public class Watermelon {
 
         Scanner sc = new Scanner(System.in);
 
-        int a = sc.nextInt();
-        int b = sc.nextInt();
+        int w = sc.nextInt();
 
-        System.out.println(a + b);
+        if (w > 2 && w % 2 == 0) {
 
+            System.out.println("YES");
+        } else {
+            System.out.println("No");
+        }
         sc.close();
     }
 }
