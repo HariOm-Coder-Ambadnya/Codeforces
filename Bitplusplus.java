@@ -9,13 +9,17 @@ public class Bitplusplus {
         int x = 0;
 
         for (int i = 0; i < n; i++) {
-            String operation = sc.next();
 
-            if (operation.contains("++")) {
-                x++;
-            } else {
-                x--;
+            String operations = sc.next();
+
+            if (operations.contains("++")) {
+                x = x + 1;
             }
+
+            if (operations.contains("--")) {
+                x = x - 1;
+            }
+
         }
 
         System.out.println(x);
