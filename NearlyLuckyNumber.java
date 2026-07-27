@@ -8,16 +8,19 @@ public class NearlyLuckyNumber {
         long n = sc.nextLong();
 
         HashSet<Long> set = new HashSet<>();
+        int count = 0;
 
         while(n > 0){
             long k = n % 10;
-            set.add(k);
+            if(k == 7 || k == 4){
+                count++;
+            }
             n = n/10;
         }
 
-        // System.out.println(set);
+        // System.out.println(count);
 
-        if(set.contains(4) || set.contains(7)){
+        if(count == 7 || count == 4){
             System.out.println("YES");
         }else{
             System.out.println("NO");
