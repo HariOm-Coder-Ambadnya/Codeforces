@@ -5,7 +5,9 @@ public class Threshold {
         Scanner sc = new Scanner(System.in);
         int t = sc.nextInt();
         StringBuilder sb = new StringBuilder();
+
         while (t-- > 0) {
+            
             int n = sc.nextInt();
             int[] w = new int[n];
             for (int i = 0; i < n; i++) {
