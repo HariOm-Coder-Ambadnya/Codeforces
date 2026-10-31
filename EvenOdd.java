@@ -5,8 +5,8 @@ public class EvenOdd {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        int k = sc.nextInt();
+        long n = sc.nextLong();
+        long k = sc.nextLong();
 
         // ArrayList<Integer> even = new ArrayList<>();
         // ArrayList<Integer> odd = new ArrayList<>();
@@ -26,7 +26,15 @@ public class EvenOdd {
         //         System.out.println(odd.get(k-1));
 
 
-        
+        // use formula
+
+        long oddcount = (n+1) / 2;
+
+        if(k <= oddcount){
+            System.out.println(2 * k - 1);
+        }else{
+            System.out.println(2 * (k - oddcount));
+        }
             
         
 
